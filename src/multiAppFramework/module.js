@@ -1,7 +1,7 @@
 /// <reference path="../../typings/angularjs/angular.d.ts"/>
 (function () {
-  'use strict';
-  
-  angular
-    .module('app', ['multiAppFramework']);
+	'use strict';
+
+	angular
+		.module('multiAppFramework', []);
 })();

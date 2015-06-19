@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html>
     
     <head>
         <title>Angular Apps on Demand</title>
@@ -14,15 +14,31 @@
         <header>
             <h1>SoCreate - Angular Apps on Demand</h1>
         </header>
-        <div ng-controller="FollowUpController as vm" 
-            ng-include="'app/followUp.html'" 
-            class="follow-up"></div>
+		<div id="spawnerApp">
+ 			<div ng-controller="MenuController as vm" 
+				ng-include="'spawnerApp/menu.html'" 
+				class="menu"></div>
+		</div>
+        <div id="apps"></div>
     </body>
     <!--scripts-start-->
     <script src="/lib/angular.min.js"></script>
     <script src="/app/module.js"></script>
+    <script src="/multiAppFramework/module.js"></script>
+    <script src="/spawnerApp/module.js"></script>
     <script src="/app/followUpController.js"></script>
     <script src="/app/followUpService.js"></script>
+    <script src="/multiAppFramework/appLifecycleService.js"></script>
+    <script src="/multiAppFramework/stateSaveService.js"></script>
+    <script src="/spawnerApp/appStageService.js"></script>
+    <script src="/spawnerApp/menuController.js"></script>
     <!--scripts-end-->
+
+	<script type="text/javascript">
+		angular.element(document).ready(function () {
+			var element = document.getElementById('spawnerApp');
+			angular.bootstrap(element, ['spawnerApp']);    
+		});
+	</script>
 
 </html>

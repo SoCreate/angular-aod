@@ -1,0 +1,8 @@
+<button ng-click="vm.addApp()">New Follow-Up</button>
+<div ng-if="vm.tombstonedAppIds.length > 0">In Progress...
+	<ul>
+		<li ng-repeat="tombstonedAppId in vm.tombstonedAppIds">
+			<a href="javascript:void(0);" ng-click="vm.restoreApp(tombstonedAppId)">{{tombstonedAppId}}</a>
+		</li>
+	</ul>
+</div>
