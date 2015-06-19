@@ -1,0 +1,17 @@
+<h1>Screenwriter Interview Follow-Up</h1>
+<ul>
+	<li>
+		<label for="fullName">Full Name</label>
+		<input type="text" name="fullName" ng-model="vm.fullName">
+	</li>
+	<li>
+		<label for="email">Email Address</label>
+		<input type="text" name="email" ng-model="vm.email">
+	</li>
+	<li>
+		<label for="notes">Notes</label>
+		<textarea name="notes" id="notes" cols="30" rows="10" ng-model="vm.notes"></textarea>
+	</li>
+</ul>
+<button ng-click="vm.clearForm()">Clear Form</button>
+<button ng-click="vm.create()">Create</button>

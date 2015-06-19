@@ -1,0 +1,13 @@
+{
+  "name": "angular-aod",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "gulp": "^3.9.0",
+    "gulp-live-server": "^0.0.20",
+    "gulp-inject": "^1.2.0"
+  }
+}

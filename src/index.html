@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    
+    <head>
+        <title>Angular Apps on Demand</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+        />
+        <link href="styles/styles.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <h1>SoCreate - Angular Apps on Demand</h1>
+        </header>
+        <div ng-controller="FollowUpController as vm" 
+            ng-include="'app/followUp.html'" 
+            class="follow-up"></div>
+    </body>
+    <!--scripts-start-->
+    <script src="/lib/angular.min.js"></script>
+    <script src="/app/module.js"></script>
+    <script src="/app/followUpController.js"></script>
+    <script src="/app/followUpService.js"></script>
+    <!--scripts-end-->
+
+</html>
